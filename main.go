@@ -3,7 +3,7 @@ package main
 import (
 	"bufio"
 	"fmt"
-	Pkg "main/pkg"
+	Pkg "main/Pkg"
 	"os"
 	"strings"
 	"time"
@@ -152,11 +152,10 @@ func main() {
 				continue
 			}
 			app.Allevents()
+			continue
 
 		} else {
-			inputerr = "you wrote uncorrect value "
-			fmt.Println(inputerr)
-			app.Addevent(text, inputerr)
+			fmt.Println("You wrote uncorrect value")
 		}
 	}
 }
